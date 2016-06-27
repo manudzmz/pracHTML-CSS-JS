@@ -12,5 +12,31 @@ body {
 	overflow-x: hidden;
 }
 
+.navbar {
+	position: fixed;
+	background-color: #575555;
+	top: 0px;
+	width: 100%;
+}
 
+.navbar .navbar-list{
+	list-style-type: none;
+	margin: 0px;
+	float: right;
+}
 
+.navbar .navbar-list .navbar-item{
+	display: inline;
+}
+
+.navbar .navbar-list .navbar-item a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px;
+	color: #FAFD04;
+}
+
+.navbar .navbar-list .navbar-item a:hover {
+	color: #575555;
+	background-color: #F8F39E;
+}
