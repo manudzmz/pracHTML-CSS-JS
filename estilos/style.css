@@ -1,0 +1,16 @@
+h1, p {
+	margin: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+
+
