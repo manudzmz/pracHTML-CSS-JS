@@ -40,7 +40,48 @@
 		<section id="estudios"></section>
 		<section id="experiencia"></section>
 		<section id="sobre-mi"></section>
-		<section id="contacto"></section>
+		<section id="contacto">
+			<form class="form" name="" method="get">
+					<div class="form-row nom-ape">
+						<label for="nombre">Nombre: </label>
+						<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+						<label for="apellidos">Apellidos</label>
+						<input type="text" id="apellidos" name="apellidos" placeholder="apellidos" required>
+					</div>
+
+					<div class="form-row">
+						<label for="">Email:</label>
+						<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+					</div>
+
+					<div class="form-row">
+						<p>Cómo me has conocido:</p>
+						<label for="tipo_mision_1">Internet</label>
+						<input type="radio" id="tipo_mision_1" name="tipo_mision" value="Consulta" required>
+						<label for="tipo_mision_2">Linkedin</label>
+						<input type="radio" id="tipo_mision_2" name="tipo_mision" value="Simple" required>
+						<label for="tipo_mision_3">Referencias personales</label>
+						<input type="radio" id="tipo_mision_3" name="tipo_mision" value="Rescate" required>
+						<label for="tipo_mision_4">Otros</label>
+						<input type="radio" id="tipo_mision_4" name="tipo_mision" value="Salvar Gotham" required>
+					</div>
+
+					<div class="form-row">
+						<label for="ejercito">Número de contacto</label>
+						<input type="number" id="ejercito" name="ejercito" min="20" required>
+					</div>
+
+					<div class="form-row">
+						<label for="fecha">Fecha de la misión:</label>
+						<textarea name="message" rows="10" cols="30"></textarea>
+					</div>
+
+					<div class="form-row">
+						<input type="submit" name="Enviar">
+					</div>
+				</form>
+		</section>
 	</div>
 	<footer>
 		Franklyn Miller &copy; 2016 KeepCoding.io
