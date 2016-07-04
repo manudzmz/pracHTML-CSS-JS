@@ -53,6 +53,11 @@ body {
 	overflow-x: hidden;
 }
 
+.container {
+	width: 80%;
+	margin: auto;
+}
+
 .navbar {
 	position: fixed;
 	/*background-color: #575555;*/
@@ -79,7 +84,7 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	padding: 20px 35px;
-	color: #FAFD04;
+	/*color: #FAFD04;*/
 	font-size: 25px;
 }
 
@@ -99,9 +104,17 @@ body {
 }
 
 .title-img {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
-	background-image: url(../imagenes/cr.jpg);
+	background-image: url(../imagenes/cr3.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all 0.5s;
+}
+
+.title-img:hover {
+	background-size: 105% 105%;
 }
 
 #inicio .title {
@@ -112,9 +125,9 @@ body {
 	text-align: center;
 	font-size: 100px;
 	text-shadow:-1px -1px 0 #ff0000,
-		           1px -1px 0 #ff0000,
-							-1px 1px 0 #ff0000,
-							 1px 1px 0 #ff0000;
+		        1px -1px 0 #ff0000,
+				-1px 1px 0 #ff0000,
+				1px 1px 0 #ff0000;
 	/*animation: titleAnimation 2s forwards;*/
 	/*visibility: hidden;*/
 	/*animation-delay: 0.8s;*/
@@ -123,7 +136,7 @@ body {
 #inicio p {
 	position: absolute;
 	left: 75px;
-	top: 50%;
+	top: 45%;
 	color: white;
 	text-align: center;
 	font-size: 35px;
@@ -135,6 +148,75 @@ body {
 	-webkit-text-stroke: 0.5px #00ff00;
 }
 
+.item-ro {
+	color: #C72929;
+}
+
+.item-ver {
+	color: #26A915;
+}
+
+.item-bl {
+	color: white;
+}
+
+#quien-soy {
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+
+#quien-soy img {
+	padding: 50px 0px 0px 0px;
+	height: 40%;
+	width: 40%;
+}
+
+#quien-soy-info {
+	max-width: 60%;
+}
+
+.h2-sec {
+	padding: 60px 20px 40px 20px;
+	font-size: 40px;
+}
+
+#quien-soy-info p{
+	padding: 0px 20px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+#estudios {
+	background-color: #C5FDA6;
+/*	margin-right: calc(-50vw + 50%); 
+	margin-left: calc(-50vw + 50%);*/
+	width: 132%;
+	margin-left: -16%;
+	padding-left: 150px;
+}
+
+#cont-estudios {
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+#cont-estudios p {
+	max-width: 35%;
+	padding-left: 25px;
+	padding-bottom: 60px;
+	text-align: justify;
+}
+
+#cont-estudios ul {
+	max-width: 50%;
+	padding-left: 280px;
+
+}
 
 /*@keyframes titleAnimation {
 	0% {
