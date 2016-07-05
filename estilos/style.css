@@ -196,6 +196,8 @@ body {
 	width: 132%;
 	margin-left: -16%;
 	padding-left: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #cont-estudios {
@@ -218,6 +220,18 @@ body {
 
 }
 
+#experiencia {
+	padding-bottom: 80px;
+}
+
+.info-exp {
+	padding-left: 13px;
+	padding-top: 15px;
+	padding-bottom: 70px;
+	padding-right: 30px;
+	text-align: justify;
+}
+
 #tabla-datos {
 	background: #F9F9F9; 
 	font-size: 95%; 
@@ -227,7 +241,8 @@ body {
 }
 
 .fila-tabla-color {
-	background: #DDDDDD;
+	background: #466DFC;
+	color: white;
 }
 
 .fila-tabla-centrada {
@@ -240,6 +255,15 @@ body {
 	background-color: black;
 }
 
+.band-tabla {
+	width: 20px;
+	height: 13px;
+}
+
+.color-columna-equipo {
+	background-color: #F8F7CF;
+}
+
 #sobre-mi {
 	background-color: #FFAFAF;
     width: 132%;
@@ -247,6 +271,20 @@ body {
 	padding-left: 150px;
 }
 
+.form-row {
+	padding: 10px;
+}
+
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.92);
+	height: 50px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	color: white;
+	justify-content: center;
+}
 /*@keyframes titleAnimation {
 	0% {
 		font-size: 100px;
