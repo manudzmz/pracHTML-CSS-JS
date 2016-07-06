@@ -179,8 +179,12 @@ body {
 }
 
 .h2-sec {
-	padding: 60px 20px 40px 20px;
+	padding: 0px 20px 40px 20px;
 	font-size: 40px;
+}
+
+.h2-quien {
+	padding-top: 60px;
 }
 
 #quien-soy-info p{
@@ -221,6 +225,7 @@ body {
 }
 
 #experiencia {
+	padding-top: 80px;
 	padding-bottom: 80px;
 }
 
@@ -269,10 +274,43 @@ body {
     width: 132%;
 	margin-left: -16%;
 	padding-left: 150px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#contacto {
+	padding: 60px 0px;
 }
 
 .form-row {
 	padding: 10px;
+}
+
+#contenedor-form {
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.opcion-otros {
+	display: none;
+}
+
+.logo-form {
+	width: 250px;
+	height: 250px;
+}
+
+.boton-form {
+	color: white;
+	background-color: black;
+	padding: 11px 40px;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 4px 2px;
 }
 
 

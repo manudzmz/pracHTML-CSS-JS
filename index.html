@@ -47,7 +47,7 @@
 		<section id="quien-soy" class="whoami">
 			<img src="imagenes/qs.png" alt="Retrato Cristiano">
 			<div id="quien-soy-info">
-				<h2 class="h2-sec">Quién soy</h2>
+				<h2 class="h2-quien h2-sec">Quién soy</h2>
 				<p>Cristiano Ronaldo dos Santos Aveiro (Funchal, Madeira, Portugal, 5 de febrero de 1985), mejor conocido como Cristiano Ronaldo, es un futbolista portugués. Juega como delantero en el Real Madrid Club de Fútbol de la Primera División de España.
 				<br><br>
                 Identificado en los medios de comunicación con el numerónimo CR7, es considerado el mejor y más completo futbolista y goleador del mundo —e incluso de la historia— por un elevado número de personas y prensa vinculadas al deporte, así como también una de las figuras más mediáticas de la actualidad. Es, con 364 goles, el máximo goleador de la historia del Real Madrid Club de Fútbol tras haber superado sucesivamente a grandes e históricos jugadores como Amancio Amaro, Emilio Butragueño, Pirri, Paco Gento, Hugo Sánchez, Ferenc Puskás, Santillana, Alfredo Di Stéfano y Raúl González Blanco, consiguiéndolo en apenas siete temporadas en el club.</p>
@@ -422,60 +422,52 @@
 		</section>
 		<section id="contacto">
 			<h2 class="h2-sec">Contacto</h2>
-			<form class="form" name="" method="get">
-					<div class="form-row nom-ape">
-						<label for="nombre">Nombre: </label>
-						<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+			<div id="contenedor-form">
+				<form class="form" name="" method="get">
+						<div class="form-row nom-ape">
+							<label for="nombre">Nombre: </label>
+							<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
 
-						<label for="apellidos">Apellidos</label>
-						<input type="text" id="apellidos" name="apellidos" placeholder="apellidos" required>
-					</div>
+							<label for="apellidos">Apellidos</label>
+							<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+						</div>
 
-					<div class="form-row">
-						<label for="">Email:</label>
-						<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
-					</div>
+						<div class="form-row">
+							<label for="">Email:</label>
+							<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+						</div>
 
-					<div class="form-row">
-						<p>Cómo me has conocido:</p>
-						<label for="tipo_mision_1">Internet</label>
-						<input type="radio" id="tipo_mision_1" name="tipo_mision" value="Consulta" required>
-						<label for="tipo_mision_2">Linkedin</label>
-						<input type="radio" id="tipo_mision_2" name="tipo_mision" value="Simple" required>
-						<label for="tipo_mision_3">Referencias personales</label>
-						<input type="radio" id="tipo_mision_3" name="tipo_mision" value="Rescate" required>
-						<label for="tipo_mision_4">Otros</label>
-						<input type="radio" id="tipo_mision_4" name="tipo_mision" value="Salvar Gotham" required>
-					</div>
-					<div class="form-row">
-						<label for="como">Cómo me has conocido</label>
-						<select id="como">
-				            <option value="">Internet</option>
-				            <option value="">Linkedin</option>
-				            <option value="">Referencias personales</option>
-				            <option value="">Otros</option>
-				        </select>
-					</div>
+						<div class="form-row">
+							<label for="como">Cómo me has conocido</label>
+							<select id="como">
+					            <option value="Internet">Internet</option>
+					            <option value="Prensa">Prensa</option>
+					            <option value="Publicidad">Publicidad</option>
+					            <option value="Otros">Otros</option>
+					        </select>
+						</div>
 
-				    <div class="form-row">
-						<label for="conocido-otros">Indica por qué otros medios me has conocido</label>
-						<input type="text" id="conocido-otros">
-					</div>
+					    <div class="form-row opcion-otros">
+							<label for="conocido-otros">Indica por qué otros medios me has conocido</label>
+							<input type="text" id="conocido-otros">
+						</div>
 
-					<div class="form-row">
-						<label for="ejercito">Número de contacto</label>
-						<input type="number" id="ejercito" name="ejercito" min="20" required>
-					</div>
+						<div class="form-row">
+							<label for="telefono">Número de contacto</label>
+							<input type="text" id="telefono" pattern="^[9|8|7|6]\d{8}$" required>
+						</div>
 
-					<div class="form-row">
-						<label for="fecha">Comentario:</label>
-						<textarea name="message" rows="10" cols="30"></textarea>
-					</div>
+						<div class="form-row">
+							<label for="fecha">Comentario:</label>
+							<textarea name="message" rows="10" cols="30"></textarea>
+						</div>
 
-					<div class="form-row">
-						<input type="submit" name="Enviar">
-					</div>
-				</form>
+						<div class="form-row">
+							<input class="boton-form" ="" type="submit" name="Enviar">
+						</div>
+			    </form>
+			    <img class="logo-form" src="imagenes/logo.png" alt="Logo CR7">
+		    </div>
 		</section>
 	</div>
 	<footer class="footer">
