@@ -193,36 +193,54 @@ body {
 	text-align: justify;
 }
 
-#estudios {
+#equipos {
 	background-color: #E4FED5;
 /*	margin-right: calc(-50vw + 50%); 
 	margin-left: calc(-50vw + 50%);*/
 	width: 132%;
 	margin-left: -16%;
-	padding-left: 150px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	/*padding-left: 150px;*/
+	padding-top: 50px;
+	padding-bottom: 70px;
 }
 
-#cont-estudios {
+#equipos h2 {
+	padding-left: 190px;
+}
+
+/*#cont-equipos {
 	display: flex;
-	flex-flow: row wrap;
-	-webkit-flex-flow: row wrap;
-	justify-content: flex-start;
-}
+	flex-flow: row nowrap;
+	-webkit-flex-flow: row nowrap;
+	justify-content: space-around;
+}*/
 
-#cont-estudios p {
+#cont-equipos p {
 	max-width: 35%;
 	padding-left: 25px;
 	padding-bottom: 60px;
 	text-align: justify;
 }
 
-#cont-estudios ul {
-	max-width: 50%;
-	padding-left: 280px;
-
+#equipos-escudos {
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+	padding-left: 130px;
 }
+
+.esc-equipos {
+	width: 60%;
+	transition: all 0.5s;
+}
+
+.esc-equipos:hover {
+	/*width: 90%;*/
+	-webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}
+
 
 #experiencia {
 	padding-top: 80px;
@@ -270,12 +288,41 @@ body {
 }
 
 #sobre-mi {
-	background-color: #FFAFAF;
+	background-color: #FFD5D5;
     width: 132%;
 	margin-left: -16%;
 	padding-left: 150px;
 	padding-top: 80px;
 	padding-bottom: 80px;
+/*	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-between;*/
+	overflow: auto;
+}
+
+#cont-texto {
+	max-width: 35%;
+	text-align: justify;
+	float: left;
+	padding-left: 20px;
+}
+
+#cont-texto p {
+	/*padding-left: 20px;*/
+}
+
+#cont-video {
+	max-width: 50%;
+	float: right;
+	margin-right: 150px;
+	padding-top: 130px;
+}
+
+.video-nat {
+	height: 250px;
+	width: 500px;
+	margin-right: auto;
 }
 
 #contacto {
@@ -313,7 +360,33 @@ body {
 	margin: 4px 2px;
 }
 
+.flip {
+	position: relative;
+	height: 305px;
+	right: 200px;
+}
 
+.front, .back {
+	position: absolute;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	transition: transform 1s;
+}
+
+.back {
+	transform: rotateX(-180deg);
+	-webkit-transform: rotateX(-180deg);
+}
+
+.flip:hover .front {
+	transform: rotateX(-180deg);
+	-webkit-transform: rotateX(-180deg);
+}
+
+.flip:hover .back {
+	transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+}
 .footer {
 	background-color: rgba(0, 0, 0, 0.92);
 	height: 50px;
