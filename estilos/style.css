@@ -202,7 +202,7 @@ body {
 	width: 132%;
 	margin-left: -16%;
 	/*padding-left: 150px;*/
-	padding-top: 50px;
+	padding-top: 70px;
 	padding-bottom: 70px;
 }
 
@@ -243,6 +243,15 @@ body {
     transform: scale(1.5)
 }
 
+.info-equipos {
+	padding-top: 60px;
+	display: none;
+}
+
+.info-equipos h3 {
+	font-size: 25px;
+	font-weight: bold;
+}
 
 #experiencia {
 	padding-top: 80px;
@@ -347,11 +356,6 @@ body {
 	display: none;
 }
 
-.logo-form {
-	width: 250px;
-	height: 250px;
-}
-
 .boton-form {
 	color: white;
 	background-color: black;
@@ -360,6 +364,18 @@ body {
 	text-decoration: none;
 	cursor: pointer;
 	margin: 4px 2px;
+}
+
+.aviso-txtarea span {
+	color:red;
+	font-weight: bold;
+	font-size: 15px;
+	display: none;
+}
+
+.logo-form {
+	width: 250px;
+	height: 250px;
 }
 
 .flip {
