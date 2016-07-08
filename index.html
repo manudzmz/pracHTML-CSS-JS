@@ -26,7 +26,7 @@
 				<a href="#quien-soy" class="item-ver">Quién soy</a>
 			</li>
 			<li class="navbar-item">
-				<a href="#estudios" class="item-bl">Estudios</a>
+				<a href="#equipos" class="item-bl">Equipos</a>
 			</li>
 			<li class="navbar-item">
 				<a href="#experiencia" class="item-ro">Experiencia</a>
@@ -88,7 +88,7 @@
 
 		<section id="experiencia">
 			<h2 class="h2-sec">Experiencia</h2>
-			<p class="info-exp">Tengo experiencia como jugador en los mejores equipos del mundo. Como adolescente ya era profesional en el Sporting de Portugal, donde mi talento pronto llamó la atención de todo el mundo. Con 17 años Sir Alex Ferguson, manager del Manchester United me lleva a su club para seguir aprendiendo y formandome como futbolista. Allí gano varios títulos, entre ellos la Champions League y, tras 6 fantásticos años ficho por el Real Madrid, donde aún sigo y donde me he convertido en el máximo goleador de la historia del club a lo largo de las 7 temporadas que llevo. En la siguiente tabla se pueden ver todos mis datos de partidos y goles.</p>
+			<article class="info-exp">Tengo experiencia como jugador en los mejores equipos del mundo. Como adolescente ya era profesional en el Sporting de Portugal, donde mi talento pronto llamó la atención de todo el mundo. Con 17 años Sir Alex Ferguson, manager del Manchester United me lleva a su club para seguir aprendiendo y formandome como futbolista. Allí gano varios títulos, entre ellos la Champions League y, tras 6 fantásticos años ficho por el Real Madrid, donde aún sigo y donde me he convertido en el máximo goleador de la historia del club a lo largo de las 7 temporadas que llevo. En la siguiente tabla se pueden ver todos mis datos de partidos y goles.</article>
 			<table id="tabla-datos">
 				<tr class="fila-tabla-color">
 					<th rowspan="2" width="150px">Club</th>
@@ -438,7 +438,7 @@
 		<section id="sobre-mi">
 			<div id="cont-texto">
 				<h2 class="h2-sec">Sobre mi</h2>
-				<p>A continuación se describen una serie de curiosidades sobre mi y sobre mi vida.<br><br>
+				<article>A continuación se describen una serie de curiosidades sobre mi y sobre mi vida.<br><br>
 					Mi padre me puso de segundo nombre Ronaldo, en homenaje al actor y posteriormente presidente de los Estados Unidos Ronald Reagan.<br><br>
 					El 7 de septiembre de 2005, mi padre, Dennis Aveiro, murió por una crisis renal a causa del alcohol. Horas después me reuní con el seleccionador de Portugal para comunicar mi intención de jugar el partido contra Rusia para la clasificación para el Mundial de Fútbol de 2006, aunque el técnico Alex Ferguson me permitió regresar a mi ciudad natal para el entierro, por lo que me perdí el partido contra el Manchester City.<br><br>
 					Después de dos partidos para la calificación a la Copa Mundial de Fútbol viajé a Indonesia para recaudar fondos por el tsunami que arrasó días antes. Me reuní con el vicepresidente Jusuf Kalla y el presidente de Timor Oriental, Xanana Gusmão para dar una contribución de 120.000 dólares.<br><br>
@@ -447,7 +447,7 @@
 					Entre mis aficiones está pasar tiempo en la naturaleza, en parajes como los del vídeo junto a este texto.	<br><br>	
 
 					Hablo portugués, inglés y español.
-			   </p>
+			   </article>
 		   </div>
 		   <div id="cont-video">
 		   		<video class="video-nat" src="videos/nature.mp4" controls></video>
@@ -468,7 +468,7 @@
 
 						<div class="form-row">
 							<label for="">Email:</label>
-							<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+							<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" title="El formato de email debe ser 'caracteres@caracteres.caracteres" required>
 						</div>
 
 						<div class="form-row">
@@ -477,13 +477,13 @@
 					            <option value="Internet">Internet</option>
 					            <option value="Prensa">Prensa</option>
 					            <option value="Publicidad">Publicidad</option>
-					            <option value="Otros">Otros</option>
+					            <option id="otros-medios" value="Otros">Otros</option>
 					        </select>
 						</div>
 
-					    <div class="form-row opcion-otros">
+					    <div id="info-otros" class="form-row">
 							<label for="conocido-otros">Indica por qué otros medios me has conocido</label>
-							<input type="text" id="conocido-otros">
+							<input type="text" id="conocido-otros" required>
 						</div>
 
 						<div class="form-row">
@@ -493,11 +493,11 @@
 
 						<div class="form-row">
 							<label for="fecha">Comentario:</label>
-							<textarea name="message" rows="10" cols="30"></textarea>
+							<textarea id="zona-texto" name="message" rows="5" cols="30"></textarea>
 						</div>
 
 						<div class="form-row">
-							<input class="boton-form" ="" type="submit" name="Enviar">
+							<input class="boton-form" type="submit" name="Enviar">
 						</div>
 			    </form>
 			    <div class="flip">
@@ -516,4 +516,5 @@
 	</footer>
 </body>
 <script src="js/sscroll.js"></script>
+<script src="js/form.js"></script>
 </html>
