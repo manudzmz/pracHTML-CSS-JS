@@ -48,7 +48,6 @@ table {
 
 body {
 	font-family: 'El Messiri', sans-serif;
-	/*font-family: 'Arima Madurai', cursive;*/
 	margin: 0px;
 	overflow-x: hidden;
 }
@@ -60,7 +59,6 @@ body {
 
 .navbar {
 	position: fixed;
-	/*background-color: #575555;*/
 	background-color: #000000;
 	top: 0px;
 	width: 100%;
@@ -83,7 +81,6 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	padding: 20px 35px;
-	/*color: #FAFD04;*/
 	font-size: 25px;
 }
 
@@ -102,10 +99,6 @@ body {
 	height: 45px;
 }
 
-.navbar .navbar-list .navbar-item.active {
-	color: #575555;
-	background-color: #F8F39E;
-}
 
 .title-img {
 	width: 100%;
@@ -163,6 +156,11 @@ body {
 	color: white;
 }
 
+.navbar .navbar-list .navbar-item.active {
+	color: #575555;
+	background-color: #F8F39E;
+}
+
 #quien-soy {
 	display: flex;
 	flex-flow: row wrap;
@@ -198,11 +196,8 @@ body {
 
 #equipos {
 	background-color: #E4FED5;
-/*	margin-right: calc(-50vw + 50%); 
-	margin-left: calc(-50vw + 50%);*/
 	width: 132%;
 	margin-left: -16%;
-	/*padding-left: 150px;*/
 	padding-top: 90px;
 	padding-bottom: 70px;
 }
