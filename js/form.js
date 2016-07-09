@@ -21,3 +21,40 @@ areaTexto.addEventListener('change', function(){
     	avisoPalabras.style.display = 'none';
     }
 });
+
+var form = document.getElementById('formulario');
+
+form.addEventListener('submit', function(e){
+	var inputNombre = document.getElementById('nombre');
+	var inputApellidos = document.getElementById('apellidos');
+	var inputEmail = document.getElementById('email');
+	var inputTelefono = document.getElementById('telefono');
+
+	if (inputNombre.checkValidity() == false) {
+		alert('Escribe tu nombre');
+		inputNombre.focus;
+		e.preventDefault();
+		return false;
+	}
+
+	if (inputApellidos.checkValidity() == false) {
+		alert('Escribe tus apellidos');
+		inputApellidos.focus;
+		e.preventDefault();
+		return false;
+	}
+
+	if (inputEmail.checkValidity() == false) {
+		alert ('Escribe tu email');
+		inputEmail.focus;
+		e.preventDefault();
+		return false;
+	}
+
+	if (inputTelefono.checkValidity() == false) {
+		alert('Introduce tu número de teléfono');
+		inputTelefono.focus;
+		e.preventDefault();
+		return false;
+	}
+})

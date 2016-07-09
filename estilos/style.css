@@ -70,6 +70,7 @@ body {
 .navbar .navbar-list{
 	list-style-type: none;
 	margin: 0px;
+	font-size: 0px;
 	display: flex;
 	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
@@ -202,26 +203,21 @@ body {
 	width: 132%;
 	margin-left: -16%;
 	/*padding-left: 150px;*/
-	padding-top: 70px;
+	padding-top: 90px;
 	padding-bottom: 70px;
 }
 
 #equipos h2 {
 	padding-left: 190px;
+	padding-bottom: 10px;
 }
 
-/*#cont-equipos {
-	display: flex;
-	flex-flow: row nowrap;
-	-webkit-flex-flow: row nowrap;
-	justify-content: space-around;
-}*/
+#mis-equipos {
+	padding-left: 190px;
+}
 
-#cont-equipos p {
-	max-width: 35%;
-	padding-left: 25px;
-	padding-bottom: 60px;
-	text-align: justify;
+.cont-escudos {
+	padding-top: 60px;
 }
 
 #equipos-escudos {
@@ -238,8 +234,8 @@ body {
 }
 
 .esc-equipos:hover {
-	/*width: 90%;*/
 	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
     transform: scale(1.5)
 }
 
@@ -305,10 +301,6 @@ body {
 	padding-left: 150px;
 	padding-top: 80px;
 	padding-bottom: 80px;
-/*	display: flex;
-	flex-flow: row wrap;
-	-webkit-flex-flow: row wrap;
-	justify-content: space-between;*/
 	overflow: auto;
 }
 
@@ -317,10 +309,6 @@ body {
 	text-align: justify;
 	float: left;
 	padding-left: 20px;
-}
-
-#cont-texto p {
-	/*padding-left: 20px;*/
 }
 
 #cont-video {
@@ -443,4 +431,63 @@ body {
 		color: rgba(255,255,255,1); 
 		visibility: visible;
 	}
+}
+
+
+.no-flexbox .flexbar {
+	float: left;
+	margin-left: 90px;
+}
+
+.no-flexbox .flexbar .item {
+	display: inline-block;
+}
+
+.no-flexbox .whoami {
+	overflow: auto;
+}
+
+.no-flexbox .soy-1 {
+	float: left;
+}
+
+.no-flexbox .soy-2 {
+	float: right;
+}
+
+.no-flexbox .flex-escudos {
+	overflow: auto;
+	margin-left: 180px;
+}
+
+.no-flexbox .escudo-1 {
+	float: left;
+}
+
+.no-flexbox .escudo-2 {
+	float: left;
+}
+
+.no-flexbox .escudo-3 {
+	float: left;
+}
+
+.no-flexbox .flex-form {
+	overflow: auto;
+}
+
+.no-flexbox .contacto-item-1 {
+	float: left;
+	margin-left: 80px;
+}
+
+.no-flexbox .contacto-item-2 {
+	float: right;
+	margin-right: 180px;
+}
+
+.no-flexbox .flex-footer {
+	text-align: center;
+	margin: auto;
+	padding-top: 15px;
 }

@@ -4,40 +4,41 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Currículum Vitae - Franklyn Miller</title>
+	<title>Currículum Deportivo - Cristiano Ronaldo</title>
 	<link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<script src="js/modernizr-custom.js"></script>
 </head>
 <body>
-	<header id="inicio" class="title-img header">
+	<header id="inicio" class="title-img header prueba">
 		<h1 class="title">Cristiano Ronaldo</h1>
 		<p class="title-text">'Dreams are not what you see in your sleep,<br> dreams are things which do not let you sleep'</p>
 	</header>
 
 	<nav class="navbar">
-		<ul class="navbar-list">
-			<li>
+		<ul class="navbar-list flexbar">
+			<li class="item">
 				<img src="imagenes/por.png" alt="Escudo Portugal" class="nav-img-por">
 			</li>
-			<li class="navbar-item">
+			<li class="navbar-item item">
 				<a href="#inicio" class="item-ro">Inicio</a>
 			</li>
-			<li class="navbar-item">
+			<li class="navbar-item item">
 				<a href="#quien-soy" class="item-ver">Quién soy</a>
 			</li>
-			<li class="navbar-item">
+			<li class="navbar-item item">
 				<a href="#equipos" class="item-bl">Equipos</a>
 			</li>
-			<li class="navbar-item">
+			<li class="navbar-item item">
 				<a href="#experiencia" class="item-ro">Experiencia</a>
 			</li>
-			<li class="navbar-item">
+			<li class="navbar-item item">
 				<a href="#sobre-mi" class="item-ver">Sobre mi</a>
 			</li>
-			<li class="navbar-item">
+			<li class="navbar-item item">
 				<a href="#contacto" class="item-bl">Contacto</a>
 			</li>
-			<li>
+			<li class="item">
 				<img src="imagenes/rm.png" alt="Real Madrid" class="nav-img-rm">
 			</li>
 		</ul>
@@ -45,8 +46,8 @@
 
 	<div class="container">
 		<section id="quien-soy" class="whoami">
-			<img src="imagenes/qs.png" alt="Retrato Cristiano">
-			<div id="quien-soy-info">
+			<img src="imagenes/qs.png" class="soy-1" alt="Retrato Cristiano">
+			<div id="quien-soy-info" class="soy-2">
 				<h2 class="h2-quien h2-sec">Quién soy</h2>
 				<article>Cristiano Ronaldo dos Santos Aveiro (Funchal, Madeira, Portugal, 5 de febrero de 1985), mejor conocido como Cristiano Ronaldo, es un futbolista portugués. Juega como delantero en el Real Madrid Club de Fútbol de la Primera División de España.
 				<br><br>
@@ -55,10 +56,9 @@
 		</section>
 		<section id="equipos">
 			<h2 class="h2-sec">Equipos</h2>
-			<div id="cont-equipos">
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut vero et, laudantium tenetur necessitatibus earum, quibusdam tempora ipsa facere laborum dolor, provident dolore voluptatibus, nemo at. Nisi temporibus magnam vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ea. Nulla voluptas quisquam aut adipisci? Repellat eius ducimus quia autem reprehenderit asperiores, esse quasi dolorum, similique labore quos perferendis possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas porro, ipsa aliquam quod! Error pariatur a doloremque consequatur hic, explicabo quia aut, magni, nihil deleniti ex nulla ipsa aperiam fugit!</p> -->
-				<div id="equipos-escudos">
-					<div class="cont-escudos">
+			<p id="mis-equipos">A lo largo de mi carrera he jugado en estos tres equipos</p>
+			<div id="equipos-escudos" class="flex-escudos">
+					<div class="cont-escudos escudo-1">
 						<figure class="figura">
 							<img class="esc-equipos" src="imagenes/sporting.png" alt="Escudo Sporting">
 							<figcaption id="info-spo" class="info-equipos">
@@ -69,8 +69,8 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="cont-escudos">
-						<figure>
+					<div class="cont-escudos escudo-2">
+						<figure class="figura">
 							<img class="esc-equipos" src="imagenes/united.png" alt="Escudo Manchester United">
 							<figcaption id="info-man" class="info-equipos">
 								<h3>Manchester United</h3>
@@ -81,8 +81,8 @@
 							</figcaption>
 						</figure>
 					</div>
-					<div class="cont-escudos">
-						<figure>
+					<div class="cont-escudos escudo-3">
+						<figure class="figura">
 							<img class="esc-equipos" src="imagenes/rm.png" alt="Escudo Real Madrid">
 							<figcaption id="info-rm" class="info-equipos">
 								<h3>Real Madrid</h3>
@@ -94,13 +94,12 @@
 							</figcaption>
 						</figure>
 					</div>
-				</div>
 			</div>
 		</section>
 
 		<section id="experiencia">
 			<h2 class="h2-sec">Experiencia</h2>
-			<article class="info-exp">Tengo experiencia como jugador en los mejores equipos del mundo. Como adolescente ya era profesional en el Sporting de Portugal, donde mi talento pronto llamó la atención de todo el mundo. Con 17 años Sir Alex Ferguson, manager del Manchester United me lleva a su club para seguir aprendiendo y formandome como futbolista. Allí gano varios títulos, entre ellos la Champions League y, tras 6 fantásticos años ficho por el Real Madrid, donde aún sigo y donde me he convertido en el máximo goleador de la historia del club a lo largo de las 7 temporadas que llevo. En la siguiente tabla se pueden ver todos mis datos de partidos y goles.</article>
+			<article class="info-exp">Tengo experiencia como jugador en los mejores equipos del mundo. Como adolescente ya era profesional en el Sporting de Portugal, donde mi talento pronto llamó la atención de todo el mundo. Con 17 años, Sir Alex Ferguson, manager del Manchester United, me lleva a su club para seguir aprendiendo y formándome como futbolista. Allí gano varios títulos, entre ellos la Champions League y, tras 6 fantásticos años, ficho por el Real Madrid, donde aún sigo y donde me he convertido en el máximo goleador de la historia del club a lo largo de las 7 temporadas que llevo. En la siguiente tabla se pueden ver todos mis datos de partidos y goles.</article>
 			<table id="tabla-datos">
 				<tr class="fila-tabla-color">
 					<th rowspan="2" width="150px">Club</th>
@@ -468,8 +467,8 @@
 
 		<section id="contacto">
 			<h2 class="h2-sec">Contacto</h2>
-			<div id="contenedor-form">
-				<form class="form" name="" method="get">
+			<div id="contenedor-form" class="flex-form">
+				<form class="form contacto-item-1" id="formulario" method="get">
 						<div class="form-row nom-ape">
 							<label for="nombre">Nombre: </label>
 							<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -514,10 +513,10 @@
 						</div>
 
 						<div class="form-row">
-							<input class="boton-form" type="submit" name="Enviar">
+							<input class="boton-form" type="submit" name="Enviar" value="Enviar">
 						</div>
 			    </form>
-			    <div class="flip">
+			    <div class="flip contacto-item-2">
 			    	<div>
 			    		<img class="logo-form front" src="imagenes/logo3.png" alt="Logo CR7">
 			    	</div>
@@ -528,7 +527,7 @@
 		    </div>
 		</section>
 	</div>
-	<footer class="footer">
+	<footer id="pie" class="footer flex-footer">
 		Manuel Díaz Marjaliza &copy; 2016 KeepCoding.io
 	</footer>
 </body>
