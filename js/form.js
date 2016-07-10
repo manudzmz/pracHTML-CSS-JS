@@ -1,3 +1,5 @@
+$.webshims.polyfill('forms');
+
 var seleccion = document.getElementById('como')
 var infoOtros = document.getElementById('info-otros');
 var areaTexto = document.getElementById('zona-texto');

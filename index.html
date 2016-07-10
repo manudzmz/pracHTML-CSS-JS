@@ -7,10 +7,12 @@
 	<title>Currículum Deportivo - Cristiano Ronaldo</title>
 	<link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<script src="js/jquery-3.0.0.js"></script>
 	<script src="js/modernizr-custom.js"></script>
+	<script src="js/js-webshim/minified/polyfiller.js"></script>
 </head>
 <body>
-	<header id="inicio" class="title-img header prueba">
+	<header id="inicio" class="title-img header">
 		<h1 class="title">Cristiano Ronaldo</h1>
 		<p class="title-text">'Dreams are not what you see in your sleep,<br> dreams are things which do not let you sleep'</p>
 	</header>
@@ -468,7 +470,7 @@
 		<section id="contacto">
 			<h2 class="h2-sec">Contacto</h2>
 			<div id="contenedor-form" class="flex-form">
-				<form class="form contacto-item-1" id="formulario" method="get">
+				<form class="form contacto-item-1 ws-validate" id="formulario" method="get">
 						<div class="form-row nom-ape">
 							<label for="nombre">Nombre: </label>
 							<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -499,7 +501,7 @@
 
 						<div class="form-row">
 							<label for="telefono">Número de contacto</label>
-							<input type="text" id="telefono" pattern="^[9|8|7|6]\d{8}$" title="El número debe comenzar por 9, 8, 7 ó 6 y tener 9 cifras en total" required>
+							<input type="text" id="telefono" pattern="^[9|8|7|6]\d{8}$" title="El número debe comenzar por 9, 8, 7 ó 6 y tener 9 cifras" required>
 						</div>
 
 						<div class="form-row">
