@@ -1,4 +1,7 @@
-$.webshims.polyfill('forms');
+if (!Modernizr.formvalidation){
+	$.webshims.polyfill('forms');
+}
+
 
 var seleccion = document.getElementById('como')
 var infoOtros = document.getElementById('info-otros');
